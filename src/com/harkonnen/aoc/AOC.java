@@ -11,8 +11,8 @@ public abstract class AOC {
 
     protected List<String> inputs = new ArrayList<>();
 
-    protected void init() throws IOException {
-        try(Stream<String> stream = Files.lines(Paths.get("inputList.txt"))) {
+    protected void init(String inputFile) throws IOException {
+        try(Stream<String> stream = Files.lines(Paths.get(inputFile))) {
             stream.forEach(inputs::add);
         }
     }

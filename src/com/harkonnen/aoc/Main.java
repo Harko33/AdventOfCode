@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        AOC aoc = new AOC02();
-        aoc.init();
+        AOC aoc = new AOC03();
+        aoc.init("inputList03.txt");
         aoc.run();
     }
 }
